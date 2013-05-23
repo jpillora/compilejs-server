@@ -1,0 +1,19 @@
+<html>
+<body>
+
+  <script src="ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+  <script type="text/javascript">
+    $.ajax({
+      url: 'http://localhost:3000/retrieve',
+      data: {
+        url: 'https://raw.github.com/jpillora/jquery.rest/gh-pages/package.json'
+      },
+      dataType: 'jsonp'
+    }).done(function(file) {
+      console.log(file);
+    });
+  </script>
+
+</body>
+</html>

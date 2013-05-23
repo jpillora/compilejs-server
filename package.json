@@ -1,0 +1,22 @@
+{
+  "name": "compilejs-server",
+  "version": "0.0.0",
+  "description": "Proxy and Downloader for Compile.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpillora/compilejs-server"
+  },
+  "author": "Jaime Pillora",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "32fd36e18a17d872ef83e5a41052cb7b6fe3bdb8",
+  "dependencies": {
+    "express": "~3.2.5",
+    "request": "~2.21.0",
+    "colors": "~0.6.0-1"
+  }
+}

@@ -1,0 +1,29 @@
+
+<html>
+<body>
+
+  <script src="ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+  <script type="text/javascript">
+
+    var contents = 'some foo and some bar and a 42';
+
+    function download(filename, data) {
+      $("<form method='post'></form>")
+        .attr('action', 'http://localhost:3000/download?filename='+filename)
+        .append($("<textarea name='__compilejsDownload'></textarea>").html(data))
+        .submit();
+    }
+
+    download(contents);
+
+  </script>
+
+</body>
+</html>
+
+
+<form method="post" action="">
+
+<input type="submit"/>
+</form>
